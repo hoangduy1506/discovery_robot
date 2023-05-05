@@ -48,6 +48,10 @@ while limit_of_data:
         x = dist*(np.cos(pitch))*(np.cos(yaw))
         y = dist*(np.cos(pitch))*(np.sin(yaw))
         z = dist*(np.sin(pitch))
+
+        xlist.append(x)
+        ylist.append(y)
+        zlist.append(z)
         
         ax.scatter(xlist[j],ylist[j],zlist[j],s=0.01,c='green')     
         j += 1
